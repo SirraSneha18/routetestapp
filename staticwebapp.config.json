@@ -1,0 +1,43 @@
+{
+    "routes": [
+      {
+        "route": "/api/*",
+        "allowedRoles": ["anonymous", "authenticated"]
+      },
+      {
+        "route": "/",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/JobsPage",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/ManageMembership",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/JobDetails",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/OwnerPage",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/AdminConfig",
+        "serve": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "/index.html",
+      "exclude": ["/api/*"]
+    }
+  }
+  
